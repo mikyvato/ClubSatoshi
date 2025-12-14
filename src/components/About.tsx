@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Users, Lightbulb, ShieldCheck, ArrowRight } from "lucide-react";
+import { getAssetPath } from "@/utils/assets";
 
 export default function About() {
     return (
@@ -28,7 +29,7 @@ export default function About() {
                     </div>
                     <div className="hidden md:block relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg animate-fade-in" style={{ animationDelay: "0.4s" }}>
                         <Image
-                            src="/Purpose_image2.png"
+                            src={getAssetPath("/Purpose_image2.png")}
                             alt="Comunidad levantando Bitcoin"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"
@@ -74,7 +75,7 @@ export default function About() {
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="order-2 md:order-1 relative h-64 rounded-2xl overflow-hidden shadow-lg animate-fade-in" style={{ animationDelay: "0.2s" }}>
                         <Image
-                            src="/vision_image.png"
+                            src={getAssetPath("/vision_image.png")}
                             alt="Futuro conectado por Bitcoin"
                             fill
                             className="object-cover hover:scale-105 transition-transform duration-700"

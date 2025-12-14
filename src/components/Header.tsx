@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Search, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { getAssetPath } from "@/utils/assets";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Header() {
                 <Link href="/" className="flex items-center gap-4 group">
                     <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden">
                         <Image
-                            src="/logo.png"
+                            src={getAssetPath("/logo.png")}
                             alt="Club Satoshi Icon"
                             fill
                             className="object-cover"

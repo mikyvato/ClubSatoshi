@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { BookOpen, Video, FileText, ExternalLink, PlayCircle, ShieldCheck, Zap, Youtube, Grid } from "lucide-react";
+import { getAssetPath } from "@/utils/assets";
 
 export default function ResourcesPage() {
     return (
@@ -102,7 +103,7 @@ export default function ResourcesPage() {
                                                     Una vez que la tengas, abrí la app y seguí los pasos para crear tu cuenta. Te van a pedir algunos datos básicos y validar tu identidad (esto se llama KYC, "Conoce a tu Cliente", y es un requisito para tu seguridad y para cumplir con las regulaciones). ¡Tranqui, es un proceso rápido!
                                                 </p>
                                                 <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-sm">
-                                                    <Image src="/step1.png" alt="Paso 1: Descargar Lemon" fill className="object-cover" />
+                                                    <Image src={getAssetPath("/step1.png")} alt="Paso 1: Descargar Lemon" fill className="object-cover" />
                                                 </div>
                                             </div>
 
@@ -117,7 +118,7 @@ export default function ResourcesPage() {
                                                     ¡Ojo! Asegurate de que la cuenta desde donde transferís esté a tu nombre, ¡si no, la transferencia podría rebotar!
                                                 </p>
                                                 <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-sm">
-                                                    <Image src="/step2.png" alt="Paso 2: Depositar pesos" fill className="object-cover" />
+                                                    <Image src={getAssetPath("/step2.png")} alt="Paso 2: Depositar pesos" fill className="object-cover" />
                                                 </div>
                                             </div>
 
@@ -132,7 +133,7 @@ export default function ResourcesPage() {
                                                     Ingresá la cantidad de pesos que querés usar para comprar Satoshis y Lemon te mostrará cuántos recibirías. Revisá bien y confirmá la operación. ¡Y listo! Tus Satoshis ya están en tu billetera de Lemon. ¡Felicidades, ya sos parte del futuro! 🥳
                                                 </p>
                                                 <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-sm">
-                                                    <Image src="/step3.png" alt="Paso 3: Comprar Bitcoin" fill className="object-cover" />
+                                                    <Image src={getAssetPath("/step3.png")} alt="Paso 3: Comprar Bitcoin" fill className="object-cover" />
                                                 </div>
                                             </div>
                                         </div>
